@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idea Viva 3D · Impresión 3D y stickers · Tocopilla</title>
+<meta name="description" content="Idea Viva 3D: impresión 3D y stickers personalizados, hechos por tres estudiantes del Colegio República de los Estados Unidos de América de Tocopilla.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Tipografías: Unbounded (títulos, ancha y tecnológica) + Newsreader (texto, editorial) -->
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<div class="bar" aria-hidden="true"><i id="barFill"></i></div>
+<div class="layer-count" aria-hidden="true">capa <b id="layerNow">000</b> / 240</div>
+
+<header class="nav">
+  <!-- LOGO: guarda tu logo en img/logo.png (o .svg). Si no existe, se ve solo el nombre -->
+  <a class="brand" href="#inicio"><img src="img/logo.png" alt="" onerror="this.remove()"><span>Idea Viva <b>3D</b></span></a>
+  <nav><a href="#manifiesto">Nosotros</a><a href="#catalogo">Catálogo</a><a href="#contacto">Contacto</a><button class="navbtn" id="navAuth" type="button">Entrar</button></nav>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero grid-bg" id="inicio">
+  <div class="cube" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <span class="float f1" aria-hidden="true"></span>
+  <span class="float f2" aria-hidden="true"></span>
+  <span class="float f3" aria-hidden="true"></span>
+  <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+    <defs><path id="c" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+    <text><textPath href="#c">idea viva 3d · hecho en tocopilla · idea viva 3d · hecho en tocopilla ·</textPath></text>
+    <circle cx="100" cy="100" r="22" class="dot"/>
+  </svg>
+  <div class="printwrap">
+    <h1>Ideas<br>que cobran<br>vida.</h1>
+    <i class="nozzle" aria-hidden="true"></i>
+  </div>
+  <p class="lead">Impresión 3D y stickers personalizados. Diseñados por tres estudiantes de Tocopilla.</p>
+  <a class="btn magnet" href="#catalogo">Ver catálogo</a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div><span>Impresión 3D ✦ Stickers ✦ Hecho a medida ✦ Capa por capa ✦ Idea Viva 3D ✦ </span><span>Impresión 3D ✦ Stickers ✦ Hecho a medida ✦ Capa por capa ✦ Idea Viva 3D ✦ </span></div></div>
+
+<!-- ============ MANIFIESTO ============ -->
+<section class="manifesto grid-bg" id="manifiesto">
+  <h2 class="split">Una idea de colegio. Una impresora. Tres cabezas.</h2>
+  <div class="cols">
+    <p class="rv">Empezamos con un filamento, un archivo y muchas ganas. Hoy diseñamos y fabricamos piezas y stickers con tu nombre, tu idea o tu manía.</p>
+    <p class="rv">Todo se hace a mano y a medida. Si lo puedes imaginar, probamos imprimirlo. Si sale chueco, lo repetimos.</p>
+  </div>
+
+  <div class="stats">
+    <div class="rv"><b data-to="3">0</b><span>fundadores</span></div>
+    <div class="rv"><b data-to="1">0</b><span>colegio detrás</span></div>
+    <div class="rv"><b data-to="240">0</b><span>capas por pieza (y más)</span></div>
+  </div>
+
+  <ul class="founders">
+    <!-- Edita el cargo de cada uno en <small> -->
+    <li class="rv tilt"><span class="ini">I</span><h3>Iñigo Vivallo</h3><small>Fundador</small></li>
+    <li class="rv tilt"><span class="ini">A</span><h3>Alonso Ramos</h3><small>Fundador</small></li>
+    <li class="rv tilt"><span class="ini">F</span><h3>Francisca Bustos</h3><small>Fundadora</small></li>
+  </ul>
+  <p class="school rv">Proyecto con el respaldo oficial del <b>Colegio República de los Estados Unidos de América</b>, Tocopilla.</p>
+</section>
+
+<!-- ============ CATÁLOGO ============ -->
+<section class="catalog grid-bg" id="catalogo">
+  <h2 class="split">Catálogo</h2>
+  <h3 class="group rv">Impresión 3D</h3>
+  <div class="grid">
+    <article class="card rv tilt"><figure class="ph"><img src="img/pua.jpg" alt="Púa de guitarra impresa en 3D" loading="lazy" onerror="this.remove()"></figure><h4>Púas de guitarra</h4><p>Con tu diseño grabado. Livianas, firmes, únicas.</p></article>
+    <article class="card rv tilt"><figure class="ph"><img src="img/adorno.jpg" alt="Adorno con nombre" loading="lazy" onerror="this.remove()"></figure><h4>Adornos con nombre</h4><p>Navidad, cumpleaños o regalo. Tu nombre en relieve.</p></article>
+    <article class="card rv tilt"><figure class="ph"><img src="img/pieza.jpg" alt="Pieza impresa en 3D" loading="lazy" onerror="this.remove()"></figure><h4>Piezas a pedido</h4><p>Llaveros, soportes, figuras. Cuéntanos qué necesitas.</p></article>
+  </div>
+  <h3 class="group rv">Stickers</h3>
+  <div class="grid">
+    <article class="card rv tilt"><figure class="ph s"><img src="img/sticker1.jpg" alt="Stickers personalizados" loading="lazy" onerror="this.remove()"></figure><h4>Stickers a medida</h4><p>Tu dibujo, tu logo, tu frase. Cortados con forma.</p></article>
+    <article class="card rv tilt"><figure class="ph s"><img src="img/sticker2.jpg" alt="Pack de stickers" loading="lazy" onerror="this.remove()"></figure><h4>Packs</h4><p>Varios diseños juntos para el cuaderno, el casco o la notebook.</p></article>
+  </div>
+  <div class="custom rv">
+    <h3>¿Tienes un modelo?<br>Mándanoslo.</h3>
+    <p>Hacemos modelos personalizados desde cero o imprimimos el que viste en internet. Nos mandas el archivo o el link, y lo hacemos.</p>
+    <p class="lic">Revisamos la licencia de cada modelo antes de imprimirlo.</p>
+    <a class="btn magnet" href="#contacto">Mandar mi modelo</a>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="contact grid-bg" id="contacto">
+  <svg class="bulb" viewBox="0 0 100 130" aria-hidden="true"><path class="draw" d="M50 8C28 8 14 24 14 44c0 14 7 22 14 31 4 5 6 9 6 15h32c0-6 2-10 6-15 7-9 14-17 14-31C86 24 72 8 50 8Z"/><path class="draw" d="M36 100h28M40 112h20M44 124h12"/></svg>
+  <h2 class="split">Pide el tuyo.</h2>
+  <form id="form" class="rv">
+    <label>Tu nombre<input name="nombre" required autocomplete="name"></label>
+    <label>¿Qué quieres?<select name="tipo"><option>Impresión 3D</option><option>Stickers</option><option>Mi propio modelo (lo mando yo)</option><option>Otra idea</option></select></label>
+    <label>Cuéntanos la idea<textarea name="msg" rows="4" required></textarea></label>
+    <button class="btn magnet" type="submit">Enviar pedido</button>
+  </form>
+  <p class="alt rv">O escríbenos directo: <a href="mailto:ideaviva3d@icloud.com">ideaviva3d@icloud.com</a> · <a href="tel:+56974319387">+56 9 7431 9387</a></p>
+</section>
+</main>
+
+<footer>
+  <div class="big" aria-hidden="true"></div>
+  <div class="foot"><span>© <span id="yr"></span> Idea Viva 3D</span><span>Colegio República de los Estados Unidos de América · Tocopilla</span></div>
+</footer>
+<!-- ============ INICIAR SESIÓN / CREAR CUENTA (modo demostración) ============ -->
+<dialog id="auth">
+  <button class="x" id="authX" type="button" aria-label="Cerrar">×</button>
+  <div class="tabs"><button type="button" data-t="login" class="on">Iniciar sesión</button><button type="button" data-t="signup">Crear cuenta</button><i></i></div>
+  <form id="authForm">
+    <label class="nm">Tu nombre<input name="nombre" autocomplete="name"></label>
+    <label>Correo<input type="email" name="email" required autocomplete="email"></label>
+    <label>Contraseña<input type="password" name="pass" required minlength="6" autocomplete="current-password"></label>
+    <p id="authMsg" role="status"></p>
+    <button class="btn" type="submit" id="authGo">Entrar</button>
+  </form>
+  <p class="demo">Modo demostración: la cuenta se guarda solo en este navegador. No uses una contraseña real.</p>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
